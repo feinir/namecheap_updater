@@ -1,0 +1,33 @@
+#config
+#global get ip url， support regx get ip in content
+common_get_ip_url: http://checkip.synology.com/
+
+domain_host:
+  -
+    host: router1
+    domain: feinir.com
+    password: d0ef30a3cfae73ead31bee82e376cefa
+#    ip: 127.0.0.1
+    get_ip_url: http://ifconfig.me/
+    frequency: 5
+  -
+    host: ctcc1
+    domain: feinir.com
+    password: d0ef30a3cfae73ead31bee82e376cefa
+#    ip: 127.0.0.1
+    get_ip_url: http://ifconfig.me/
+    frequency: 5
+
+  - host: ctcc2
+    domain: feinir.com
+    password: d0ef30a3cfae73ead31bee82e376cefa
+    #    ip: 127.0.0.1
+    get_ip_url: http://ifconfig.me/
+    frequency: 5
+
+  - host: cmcc
+    domain: feinir.com
+    password: d0ef30a3cfae73ead31bee82e376cefa
+    #    ip: 127.0.0.1
+    get_ip_url: http://ifconfig.io/
+    frequency: 5
