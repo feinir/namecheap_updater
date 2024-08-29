@@ -1,0 +1,14 @@
+[Unit]
+Description=ddns
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Type=simple
+User=root
+DynamicUser=true
+WorkingDirectory=/usr/local/ddns
+ExecStart=/usr/local/ddns/update_cheap-lin -config /usr/local/ddns/config.yaml
+
+[Install]
+WantedBy=multi-user.target
