@@ -1,4 +1,4 @@
-module DDNSU
+module namecheapupdater
 
 go 1.20.0
 

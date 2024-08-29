@@ -1,8 +1,8 @@
 package main
 
 import (
-	"DDNSU/common"
 	"flag"
+	"namecheapupdater/common"
 )
 
 func main() {
